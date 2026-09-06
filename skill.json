@@ -1,0 +1,36 @@
+{
+  "name": "genpark-multimodal-aspect-ratio-smart-reframe-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic horizontal 16:9 to vertical 9:16 speaker tracking and smart reframing bounding box crop coordinator.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "smart-reframe",
+    "aspect-ratio",
+    "capcut",
+    "autopod",
+    "video-automation"
+  ],
+  "inputs": {
+    "source_aspect_ratio": {
+      "type": "string"
+    },
+    "target_aspect_ratio": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "reframe_plan_id": {
+      "type": "string"
+    },
+    "speaker_centered": {
+      "type": "boolean"
+    },
+    "motion_tracking_confidence": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
